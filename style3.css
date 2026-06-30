@@ -1,11 +1,21 @@
 .main {
-    display:grid;
-    grid-template-columns: 200px 200px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
     grid-template-rows: 100px 100px;
-    gap:10px;
+    gap: 10px;
+    grid-template-areas:
+        "box-1 box-2 box-2 box-3"
+        "box-1 box-4 box-5 box-5";
+    height: 200px;
+    width: 1000px;
 }
-.a,.b,.c,.d,.e,.f,.g,.h,.i,.j {
-    width: 100px;
-    height: 100px;
+
+.a,
+.b,
+.c,
+.d {
     background-color: red;
+    color: black;
+    height: auto;
+    width: auto;
 }
